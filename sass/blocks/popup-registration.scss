@@ -1,0 +1,159 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-reg {
+  position: relative;
+  width: 403px;
+  min-height: 580px;
+  margin: 70px auto;
+  padding: 20px;
+  background: #f2f2f2;
+  color: black;  
+
+    @media ($mobile-width-only) {
+      width: 340px;
+      margin-top: 10px;
+    }
+}
+
+.popup-reg h2 {
+  margin-top: 0;
+  margin-left: 10px;
+  color: #000000;
+  font-family: 'HarmoniaSansProCyr-SemiBd', sans-serif; 
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.popup-reg button:hover {
+  background: rgb(1, 68, 122);
+  color: #ffffff;
+}
+
+.popup-reg__close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 25px;
+  text-decoration: none;
+  color: #8D8D8D;
+
+    &:hover{
+     color: #00569B;
+}
+}
+
+
+.popup-reg__content {
+  margin-left: 10px;
+  max-height: 30%;
+  overflow: auto;
+  font-family: 'HarmoniaSansProCyr-SemiBd', sans-serif; 
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.popup-reg__content__type-check button{
+  width: 160px;
+  height: 55px;
+  border: 1px solid #dcdcdc; 
+  font-family: 'HarmoniaSansProCyr-SemiBd', sans-serif; 
+  font-size: 16px;
+  line-height: 21px;
+
+    @media ($mobile-width-only) {
+          width: 140px;
+    }
+}
+
+.type-check__button1 {
+  margin-right: 0px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.type-check__button2 {
+  margin-left: -5px;
+  color: #ffffff;
+  background-color: #00569B;
+}
+
+.popup-reg__content div {
+  margin-bottom: 20px;
+}
+
+.input-name {
+  height: 55px;
+  width: 321px;
+
+    @media ($mobile-width-only) {
+          width: 280px;
+    }
+}
+
+.input-tel__prefix {  
+  height: 55px;
+  width: 50px;
+  text-align:center;
+}
+
+.input-tel__phone {  
+  height: 55px;
+  width: 271px;
+  text-align:center;
+
+    @media ($mobile-width-only) {
+          width: 230px;
+    }
+}
+
+.input-region__region {
+  height: 55px;
+  width: 321px;
+
+    @media ($mobile-width-only) {
+          width: 280px;
+    }
+}
+
+@media screen and (max-width: 400px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.popup-reg__content__reg-button {
+  width: 232px;
+  height: 52px;
+  margin-left: 50px;
+  color: #ffffff;
+  background-color: #00569B;
+  border-radius: 28px;
+  font-family: 'HarmoniaSansProCyr-SemiBd', sans-serif; 
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+    @media ($mobile-width-only) {
+          margin-left: 20px;
+    }
+}
